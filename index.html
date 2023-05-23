@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-**********" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <title>CafeMenu</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h3 id='logo'>CafeLogo</h3>
+        <ul id="main-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#aboutthefounder">About</a></li>
+            <li><a href="#menu-div1">Menu</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#staff-section">Team</a></li>
+            <li><a href="#blog-section">Blog</a></li>
+            <li><a href="#footer">Contact us</a></li>
+        </ul>
+        <button class="hamburger toggleMenu">
+            <i class="fa fa-icon-1"></i> </button>
+
+        </button>
+        <div class='side-icons'>
+            <p>Hotline: <br> 9876543210</p>
+            <i class="fas fa-shopping-cart"></i>
+
+        </div>
+    </nav>
+
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#" onclick="toggler()">Home</a></li>
+            <li><a href="#aboutthefounder" onclick="toggler()">About</a></li>
+            <li><a href="#menu-div1" onclick="toggler()">Menu</a></li>
+            <li><a href="#" onclick="toggler()">Testimonials</a></li>
+            <li><a href="#staff-section" onclick="toggler()">Team</a></li>
+            <li><a href="#blog-section" onclick="toggler()">Blog</a></li>
+            <li><a href="#footer" onclick="toggler()">Contact us</a></li>
+        </ul>
+    </nav>
+    <!-- Navbar end -->
+
+    <section id="sec1">
+        <div class="section1">
+            <i class="fas fa-utensils"></i>
+            <p>EXPERIENCE THE FOOD</p>
+            <h1>TRADITIONAL & SEAFOOD CUISINE</h1>
+            <button onclick="navigateToDiv()">VIEW OUR MENU</button>
+        </div>
+    </section>
+
+    <section>
+        <div class="cafe-imgs">
+            <div class="image" id="image1"></div>
+            <div class="image" id="image2"></div>
+            <div class="image" id="image3"></div>
+        </div>
+        <div id="aboutthefounder">
+            <div id="abt-div1">
+                <img src="/assets/cafe-img.jpg" alt="1" id="abtpic-1">
+            </div>
+            <div id="abt-div2">
+                <i class="fa fa-crown"></i>
+                <h1>History of <br> this testament</h1>
+                <div id="abt">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus facere ex recusandae quisquam
+                        quasi a. Eligendi consequuntur sunt ducimus impedit velit doloremque architecto dolorem incidunt
+                        error tempora </p>
+                </div>
+            </div>
+            <div id="abt-div3">
+                <img src="/assets/cafe-img.jpg" alt="1" id="abtpic-3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section>
+        <div id="menu-div1">
+            <p>FROM OUR MENU</p>
+            <h1>OUR CHEF RECOMMENDED</h1>
+            <i class="fas fa-utensils"></i>
+        </div>
+        <!-- menu card -->
+        <!-- Menu Container -->
+        <div id="menu">
+            <div id="menucard">
+
+                <div id="tablinks">
+                    <a href="#menucard" onclick="openMenu('Pizza');" id="myLink">
+                        Pizza
+                    </a>
+                    <a href="#menucard" onclick="openMenu('Pasta');">
+                        Salads
+                    </a>
+                    <a href="#menucard" onclick="openMenu('Starter');">
+                        Starter
+                    </a>
+                </div>
+
+                <div id="Pizza" class="menu">
+                    <div class="menu-items">
+                        <img src="/assets/cafe-img.jpg" alt="mi1">
+                        <div class="menu-text">
+                            <h1><b>Margherita</b> <span>$12.50</span></h1>
+                            <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-items">
+                        <img src="/assets/cafe-img.jpg" alt="mi1">
+                        <div class="menu-text">
+                            <h1><b>Formaggio</b> <span>$15.50</span></h1>
+                            <p>Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-items">
+                        <img src="/assets/cafe-img.jpg" alt="mi1">
+                        <div class="menu-text">
+                            <h1><b>Chicken</b> <span>$17.00</span></h1>
+                            <p>Fresh tomatoes, mozzarella, chicken, onions</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-items">
+                        <img src="/assets/cafe-img.jpg" alt="mi1">
+                        <div class="menu-text">
+                            <h1><b>Pineapple'o'clock</b> <span>$16.50</span></h1>
+                            <p>Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-items">
+                        <img src="/assets/cafe-img.jpg" alt="mi1">
+                        <div class="menu-text">
+                            <h1><b>Meat Town</b><span>$20.00</span></h1>
+                            <p>Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-items">
+                        <img src="/assets/cafe-img.jpg" alt="mi1">
+                        <div class="menu-text">
+                            <h1><b>Parma</b><span>$21.50</span></h1>
+                            <p>Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Pasta" class="menu">
+
+                    <div class="menu-items">
+                        <img src="/assets/cafe-img.jpg" alt="mi1">
+                        <div class="menu-text">
+                            <h1><b>Lasagna</b><span>$13.50</span></h1>
+                            <p>Special sauce, mozzarella, parmesan, ground beef</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-items">
+                        <img src="/assets/cafe-img.jpg" alt="mi1">
+                        <div class="menu-text">
+                            <h1><b>Ravioli</b> <span>$14.50</span></h1>
+                            <p>Ravioli filled with cheese</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-items">
+                        <img src="/assets/cafe-img.jpg" alt="mi1">
+                        <div class="menu-text">
+                            <h1><b>Spaghetti Classica</b> <span>$11.00</span></h1>
+                            <p>Fresh tomatoes, onions, ground beef</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-items">
+                        <img src="/assets/cafe-img.jpg" alt="mi1">
+                        <div class="menu-text">
+                            <h1><b>Seafood pasta</b> <span>$25.50</span></h1>
+                            <p>Salmon, shrimp, lobster, garlic</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="Starter" class="menu">
+
+                    <div class="menu-items">
+                        <img src="/assets/cafe-img.jpg" alt="mi1">
+                        <div class="menu-text">
+                            <h1><b>Today's Soup</b><span>$5.50</span></h1>
+                            <p>Ask the waiter</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-items">
+                        <img src="/assets/cafe-img.jpg" alt="mi1">
+                        <div class="menu-text">
+                            <h1><b>Bruschetta</b> <span>$8.50</span></h1>
+                            <p>Bread with pesto, tomatoes, onion, garlic</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-items">
+                        <img src="/assets/cafe-img.jpg" alt="mi1">
+                        <div class="menu-text">
+                            <h1><b>Garlic bread</b> <span>$9.50</span></h1>
+                            <p>Grilled ciabatta, garlic butter, onions</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-items">
+                        <img src="/assets/cafe-img.jpg" alt="mi1">
+                        <div class="menu-text">
+                            <h1><b>Tomozzarella</b> <span>$10.50</span></h1>
+                            <p>Tomatoes and mozzarella</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="/assets/cafe-img.jpg">
+                        <!-- <div class="text">Caption Text</div> -->
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="/assets/cafe-img2.jpg">
+                        <!-- <div class="text">Caption Two</div> -->
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="/assets/cafe-img3.jpg">
+                        <!-- <div class="text">Caption Three</div> -->
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                </div>
+                <br>
+
+                <!-- <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div> -->
+
+
+
+            </div>
+
+        </div>
+    </section>
+    <br>
+    <section>
+        <div id="special-menu">
+            <p>MENU SPECIAL</p>
+            <h1>TODAY'S SPECIAL MENU</h1>
+            <i class="fas fa-utensils"></i>
+        </div>
+        <div id="special-menu-items">
+            <div class="dish-card">
+                <div class="dish-image">
+                    <img src="/assets/cafe-img.jpg" alt="Dish Image">
+                </div>
+                <div class="dish-info">
+                    <div class="dish-rating">
+                        <span class="star-icon">&#9733;</span>
+                        <span class="star-icon">&#9733;</span>
+                        <span class="star-icon">&#9733;</span>
+                        <span class="star-icon">&#9733;</span>
+                        <span class="star-icon">&#9733;</span>
+                    </div>
+                    <h3 class="dish-name">Delicious Dish</h3>
+                    <p class="dish-description">This is a mouthwatering dish that will leave you craving for more.</p>
+                    <div class="dish-details">
+                        <span class="dish-price">₹100</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card">
+                <div class="dish-image">
+                    <img src="/assets/cafe-img2.jpg" alt="Dish Image">
+                </div>
+                <div class="dish-info">
+                    <div class="dish-rating">
+                        <span class="star-icon">&#9733;</span>
+                        <span class="star-icon">&#9733;</span>
+                        <span class="star-icon">&#9733;</span>
+                        <span class="star-icon">&#9733;</span>
+                        <span class="star-icon">&#9733;</span>
+                    </div>
+                    <h3 class="dish-name">Delicious Dish</h3>
+                    <p class="dish-description">This is a mouthwatering dish that will leave you craving for more.</p>
+                    <div class="dish-details">
+                        <span class="dish-price">₹100</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card">
+                <div class="dish-image">
+                    <img src="/assets/cafe-img3.jpg" alt="Dish Image">
+                </div>
+                <div class="dish-info">
+                    <div class="dish-rating">
+                        <span class="star-icon">&#9733;</span>
+                        <span class="star-icon">&#9733;</span>
+                        <span class="star-icon">&#9733;</span>
+                        <span class="star-icon">&#9733;</span>
+                        <span class="star-icon">&#9733;</span>
+                    </div>
+                    <h3 class="dish-name">Delicious Dish</h3>
+                    <p class="dish-description">This is a mouthwatering dish that will leave you craving for more.</p>
+                    <div class="dish-details">
+                        <span class="dish-price">₹100</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- staff section -->
+    <section>
+        <div id="staff-section">
+            <div id="staff-quote">
+
+            </div>
+            <div id="special-chef-section">
+                <p style="color: red;">EXPERT WORKERS</p>
+                <h1>OUR SPECIAL CHEFS</h1>
+                <i class="fas fa-utensils"></i>
+            </div>
+            <div id="chef-cards">
+
+                <div class="chef-card">
+                    <div id="chef-img1">
+                        <div class="text-container">
+                            <div class="text">
+                                Mr. John Doe
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chef-card">
+                    <div id="chef-img2">
+                        <div class="text-container">
+                            <div class="text">
+                                Mr. John Doe
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chef-card">
+                    <div id="chef-img3">
+                        <div class="text-container">
+                            <div class="text">
+                                Mr. John Doe
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="stats">
+                <div class="stat">
+                    <i class="fas fa-handshake"></i>
+                    <h1>7</h1>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-handshake"></i>
+                    <h1>45</h1>
+                    <p>Clients daily</p>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-handshake"></i>
+                    <h1>3</h1>
+                    <p>Years of experience</p>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-handshake"></i>
+                    <h1>7</h1>
+                    <p>Fresh and Halal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="blog-section">
+            <div id="blog-heading">
+                <p style="color: red;">LATEST NEWS & BLOG</p>
+                <h1>OUR NEWS & EVENTS</h1>
+            </div>
+            <div id="events">
+                <div id="ev1">
+                    <div class="video-container">
+                        <video src="/assets/pexels-mart-production-7565437-1080x1920-25fps.mp4" controls>
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div id="ev-texts">
+                        <div class="ev-text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni sit, neque distinctio
+                                consequatur quam perferendis optio doloremque</p>
+                        </div>
+                        <div class="ev-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos voluptatem nisi
+                                repellendus, recusandae officia quidem necessitatibus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="blogs">
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="/assets/cafe-img.jpg" alt="Dish Image">
+                    </div>
+                    <div class="blog-info">
+                        <p class="blog-description">Saturday, 7th May 2023</p>
+                        <h3 class="blog-name">Lorem Ipsum Title</h3>
+                        <div class="blog-details">
+                            <span class="read-more">Read more -></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="/assets/cafe-img2.jpg" alt="Dish Image">
+                    </div>
+                    <div class="blog-info">
+                        <p class="blog-description">Saturday, 7th May 2023</p>
+                        <h3 class="blog-name">Lorem Ipsum Title</h3>
+                        <div class="blog-details">
+                            <span class="read-more">Read more -></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="/assets/cafe-img3.jpg" alt="Dish Image">
+                    </div>
+                    <div class="blog-info">
+                        <p class="blog-description">Saturday, 7th May 2023</p>
+                        <h3 class="blog-name">Lorem Ipsum Title</h3>
+                        <div class="blog-details">
+                            <span class="read-more">Read more -></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="delivery-banner">
+            <img src="/assets/delivery.png" alt="delivery-man">
+            <div class="flex-banner">
+            <div id="banner-text">
+                <h5>GET FREE DELIVERY!</h5>
+                <p>As well known and we are very busy all days before so we can guarantee your seat</p>
+            </div>
+            <div id="banner-num" style="text-align: center;">
+                9876543210
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div id="footer-divs">
+            <div id="footer-div1">
+                <h3>Our Story</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ducimus distinctio similique alias
+                    expedita velit vel qui illo, iste dolorum? Ipsa quidem fuga accusamus</p>
+
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://www.twitter.com" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <a href="https://www.linkedin.com" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="https://www.pinterest.com" target="_blank">
+                    <i class="fab fa-pinterest"></i>
+                </a>
+            </div>
+            <!-- <div id="footer-div2">
+                <h3>Hot Menus</h3>
+                <div class="hot-menu-item">
+                    <p>&#9654; Item1</p>
+                    <p>&#9654; Item2</p>
+                    <p>&#9654; Item3</p>
+                    <p>&#9654; Item4</p>
+                    <p>&#9654; Item5</p>
+
+                </div>
+            </div> -->
+            <div id="footer-div3">
+                <h3>Contact & Reservation</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur corporis libero suscipit
+                    laudantium quis dignissimos</p>
+            </div>
+            <div id="footer-div4">
+                <h3>Opening Hours</h3>
+                <p><em>Monday:</em> 8am-10pm</p>
+                <p><em>Tuesday:</em> 9am-12pm</p>
+                <p><em>Wednesday:</em> 9am-10pm</p>
+                <p><em>Sunday:</em> <span>Closed</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tabbed Menu
+        function openMenu(menuName) {
+            var i, x;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(menuName).style.display = "block";
+        }
+        window.onload = function () {
+            document.getElementById("myLink").click();
+        };
+
+        function navigateToDiv() {
+            var targetDiv = document.getElementById("menu-div1");
+            if (targetDiv) {
+                targetDiv.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+
+        // hamburger-menu
+        const menu_btn = document.querySelector('.toggleMenu');
+        const mob_menu = document.querySelector('.mobile-nav');
+
+        function toggler() {
+            var isActiv = true;
+            if (isActiv) {
+                menu_btn.classList.toggle('is-active');
+            } else {
+                menu_btn.classList.remove('is-active');
+            }
+            isActiv = !isActiv;
+            mob_menu.classList.toggle('is-active');
+
+            const icon = button.querySelector('i');
+            if (icon.classList.contains('fa-icon-1') && !isActiv) {
+                icon.classList.remove('fa-icon-1');
+                icon.classList.add('fa-icon-2');
+            } else {
+                icon.classList.remove('fa-icon-2');
+                icon.classList.add('fa-icon-1');
+            }
+        }
+        menu_btn.addEventListener('click', toggler);
+
+        // button styles
+        const button = document.querySelector('.hamburger');
+
+
+
+        function menuToggle() {
+            const menu = document.querySelector('.menu-toggle');
+
+        }
+        //slideshow
+        let slideIndexx = 1;
+        showSlides(slideIndexx);
+
+        function plusSlides(n) {
+            showSlides(slideIndexx += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndexx = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndexx = 1 }
+            if (n < 1) { slideIndexx = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndexx - 1].style.display = "block";
+            dots[slideIndexx - 1].className += " active";
+        }
+
+    </script>
+
+</body>
+
+</html>
