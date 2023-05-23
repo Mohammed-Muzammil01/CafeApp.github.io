@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* line-height: 1.6; */
-  background-image: url('/assets/websitefusioninsta.png');
+  background-image: url('./assets/websitefusioninsta.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -278,7 +278,7 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('./assets/cafe-img.jpg');
+  background-image: url('../assets/cafe-img.jpg');
   /* box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.75); */
 
 }
@@ -287,7 +287,7 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('./assets/cafe-img.jpg');
+  background-image: url('../assets/cafe-img.jpg');
   /* box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.75); */
 }
 
@@ -295,7 +295,7 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('./assets/cafe-img.jpg');
+  background-image: url('../assets/cafe-img.jpg');
   /* box-shadow: 8px 8px 10px -5px rgba(0, 0, 0, 0.75); */
 
 }
@@ -817,7 +817,7 @@ a {
 }
 
 #staff-quote{
-  background-image: url('/assets/staffQuote.webp');
+  background-image: url('./assets/staffQuote.webp');
   background-size: cover;
   height: 30vh;
   width: 65%;
@@ -872,7 +872,7 @@ a {
   width: 100%;
   position: relative;
   /* display: inline-block; */
-  background-image: url('/assets/chef1.jpg');
+  background-image: url('./assets/chef1.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -882,7 +882,7 @@ a {
   width: 100%;
   position: relative;
   /* display: inline-block; */
-  background-image: url('/assets/chef1.jpg');
+  background-image: url('./assets/chef1.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -892,7 +892,7 @@ a {
   width: 100%;
   position: relative;
   /* display: inline-block; */
-  background-image: url('/assets/chef1.jpg');
+  background-image: url('./assets/chef1.jpg');
   background-position: center;
   background-size: cover;
 }
